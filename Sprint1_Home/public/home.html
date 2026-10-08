@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-logo">
+            <h1>SiFinance</h1>
+        </div>
+
+        <div class="header-actions">
+            <button type="button" class="header-icon-btn" title="Modo Escuro">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+
+            <button type="button" class="header-icon-btn" title="Notificações">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+            </button>
+
+            <button type="button" class="header-icon-btn profile-icon-btn" title="Meu Perfil">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="aside-bar closed" id="sidebar">
+            <div class="sidebar-content">
+                <div class="toggle-box" id="toggle-sidebar">
+                    <h2 class="sidebar-title">&gt; Ferramentas</h2>
+                </div>
+
+                <nav class="sidebar-menu">
+                    <a href="home.html" class="menu-item active">Dashboard Inicial</a>
+                    <a href="minhas-financas.html" class="menu-item">Minhas Finanças</a>
+                    <a href="alerta-dividas.html" class="menu-item">Alerta de Dívidas</a>
+                    <a href="orcamento.html" class="menu-item">Orçamento Inteligente</a>
+                    <a href="investimentos.html" class="menu-item">Investimentos</a>
+                    <a href="calculadoras.html" class="menu-item">Calculadoras</a>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h2 class="sobre-titulo">Bem vindo, Usuário!</h3>
+            <h2 class="titulo-principal">Meu Dashboard</h3>
+            <section class="section-grid-2">
+                <article class="dashboard-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Saldo atual</h3>
+                        <p class="select-date">v selecionar data</p>
+                    </div>
+
+                    <div class="card-value">
+                        <p class="currency">R$</p>
+                        <p class="amount">*****</p>
+                    </div>
+
+                    <hr class="card-divider">
+
+                    <h4 class="history-title">Histórico dos últimos 7 dias</h4>
+
+                    <ul class="history-list">
+                        <li class="gasto">
+                            <div class="icon">🞃</div>
+                            <p class="desc">nome_descrição (tipo_gasto):</p>
+                            <p class="value">R$ *****</p>
+                        </li>
+                        <li class="gasto">
+                            <div class="icon">🞃</div>
+                            <p class="desc">nome_descrição (tipo_gasto):</p>
+                            <p class="value">R$ *****</p>
+                        </li>
+                        <li class="gasto">
+                            <div class="icon">🞃</div>
+                            <p class="desc">nome_descrição (tipo_gasto):</p>
+                            <p class="value">R$ *****</p>
+                        </li>
+                        <li class="ganho">
+                            <div class="icon">🞁</div>
+                            <p class="desc">nome_descrição (tipo_ganho):</p>
+                            <p class="value">R$ *****</p>
+                        </li>
+                        <li class="ganho">
+                            <div class="icon">🞁</div>
+                            <p class="desc">nome_descrição (tipo_ganho):</p>
+                            <p class="value">R$ *****</p>
+                        </li>
+                        <li class="gasto">
+                            <div class="icon">🞃</div>
+                            <p class="desc">nome_descrição (tipo_gasto):</p>
+                            <p class="value">R$ *****</p>
+                        </li>
+                        <li class="ganho">
+                            <div class="icon">🞁</div>
+                            <p class="desc">nome_descrição (tipo_ganho):</p>
+                            <p class="value">R$ *****</p>
+                        </li>
+                    </ul>
+                </article>
+                <article class="dashboard-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Relação Receitas x Despesas</h3>
+                        <p class="select-date">v selecionar data</p>
+                    </div>
+
+                    <div class="card2-group">
+                        <div class="card2-info">
+                            <p class="card2-label">Receitas</p>
+                            <p class="card2-value ganho">R$ *****</p>
+                        </div>
+                        <div class="card2-bar-bg">
+                            <div class="card2-bar receitas-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="card2-group">
+                        <div class="card2-info">
+                            <p class="card2-label">Despesas</p>
+                            <p class="card2-value gasto">R$ *****</p>
+                        </div>
+                        <div class="card2-bar-bg">
+                            <div class="card2-bar despesas-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="card2-comparison">
+                        <p class="card2-comp-item">
+                            <strong>Receitas</strong> em relação ao mês anterior: 
+                            <span class="ganho">+R$ ***** (+25,45%)</span>
+                        </p>
+                        <p class="card2-comp-item">
+                            <strong>Despesas</strong> em relação ao mês anterior: 
+                            <span class="gasto">-R$ ***** (-15,25%)</span>
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="section-full">
+                <article class="large-card">
+
+                </article>
+            </section>
+            <section class="section-grid-2">
+                <article class="dashboard-card">
+
+                </article>
+
+                <div class="mini-card-box">
+                    <article class="dashboard-card mini-card">
+
+                    </article>
+                    <article class="dashboard-card mini-card">
+
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
