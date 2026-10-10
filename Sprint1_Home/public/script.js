@@ -7,13 +7,4 @@ document.addEventListener("DOMContentLoaded", () => {
       sidebar.classList.toggle('closed');
     });
   }
-
-  const selectDate = document.getElementById("select-date");
-  const selectDateBtn = document.getElementById("toggle-select-date");
-  if (selectDate && selectDateBtn) {
-    selectDateBtn.addEventListener("click", () => {
-      selectDate.classList.toggle("closed");
-    });
-  }
-  
 });
