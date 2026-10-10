@@ -36,20 +36,17 @@
     </header>
     <div class="container">
         <aside class="aside-bar closed" id="sidebar">
-            <div class="sidebar-content">
-                <div class="toggle-box" id="toggle-sidebar">
-                    <h2 class="sidebar-title">&gt; Ferramentas</h2>
-                </div>
-
-                <nav class="sidebar-menu">
-                    <a href="home.html" class="menu-item active">Dashboard Inicial</a>
-                    <a href="minhas-financas.html" class="menu-item">Minhas Finanças</a>
-                    <a href="alerta-dividas.html" class="menu-item">Alerta de Dívidas</a>
-                    <a href="orcamento.html" class="menu-item">Orçamento Inteligente</a>
-                    <a href="investimentos.html" class="menu-item">Investimentos</a>
-                    <a href="calculadoras.html" class="menu-item">Calculadoras</a>
-                </nav>
+            <div class="toggle-box" id="toggle-sidebar">
+                <h2 class="sidebar-title">&gt; Ferramentas</h2>
             </div>
+            <nav class="sidebar-menu">
+                <a href="home.html" class="menu-item active">Dashboard Inicial</a>
+                <a href="minhas-financas.html" class="menu-item">Minhas Finanças</a>
+                <a href="alerta-dividas.html" class="menu-item">Alerta de Dívidas</a>
+                <a href="orcamento.html" class="menu-item">Orçamento Inteligente</a>
+                <a href="investimentos.html" class="menu-item">Investimentos</a>
+                <a href="calculadoras.html" class="menu-item">Calculadoras</a>
+            </nav>
         </aside>
 
         <main class="main-content">
@@ -59,8 +56,17 @@
                 <article class="dashboard-card">
                     <div class="card-header">
                         <h3 class="card-title">Saldo atual</h3>
-                        <p class="select-date">v selecionar data</p>
+                        
+                        <select name="select-period" class="history-period">
+                            <option value="diario">Hoje</option>
+                            <option value="semanal">Últimos 7 dias</option>
+                            <option value="quinzenal">Últimos 15 dias</option>
+                            <option value="mensal">Último mês</option>
+                            <option value="personalizado">Personalizar</option>
+                        </select>
+
                     </div>
+                    
 
                     <div class="card-value">
                         <p class="currency">R$</p>
@@ -69,7 +75,7 @@
 
                     <hr class="card-divider">
 
-                    <h4 class="history-title">Histórico dos últimos 7 dias</h4>
+                    <h4 class="history-title">Histórico de arrecadamentos e gastos</h4>
 
                     <ul class="history-list">
                         <li class="gasto">
@@ -109,10 +115,19 @@
                         </li>
                     </ul>
                 </article>
+
                 <article class="dashboard-card">
                     <div class="card-header">
+
                         <h3 class="card-title">Relação Receitas x Despesas</h3>
-                        <p class="select-date">v selecionar data</p>
+                        <select name="Selecionar Período" class="history-period">
+                            <option value="diario">Hoje</option>
+                            <option value="semanal">Últimos 7 dias</option>
+                            <option value="quinzenal">Últimos 15 dias</option>
+                            <option value="mensal">Último mês</option>
+                            <option value="personalizado">Personalizar</option>
+                        </select>
+
                     </div>
 
                     <div class="card2-group">
@@ -142,7 +157,7 @@
                         </p>
                         <p class="card2-comp-item">
                             <strong>Despesas</strong> em relação ao mês anterior: 
-                            <span class="gasto">-R$ ***** (-15,25%)</span>
+                            <span class="gasto">+R$ ***** (+15,25%)</span>
                         </p>
                     </div>
                 </article>
