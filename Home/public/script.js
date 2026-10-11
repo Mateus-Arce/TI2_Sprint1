@@ -7,4 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
       sidebar.classList.toggle('closed');
     });
   }
+
+  const welcomeElement = document.getElementById("user-welcome");
+  const savedName = localStorage.getItem("sifinance_name");
+  if (savedName) {
+    welcomeElement.textContent = savedName;
+  }
+
 });
