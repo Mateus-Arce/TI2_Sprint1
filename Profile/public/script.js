@@ -35,5 +35,17 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
     });
+
+    const currencySelect = document.getElementById("currency-select");
+
+    if (currencySelect) {
+        
+        const savedCurrency = localStorage.getItem("sifinance_currency") || "real";
+        currencySelect.value = savedCurrency;
+
+        currencySelect.addEventListener("change", (e) => {
+            localStorage.setItem("sifinance_currency", e.target.value);
+        });
+    }
     
 });

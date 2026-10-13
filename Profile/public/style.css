@@ -302,6 +302,39 @@ body {
   box-sizing: border-box;
 }
 
+.profile-right-column > h3{
+  color: white;
+}
+
+.currency-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.currency-row > label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.currency-type {
+  padding: 6px 10px;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.currency-type:focus {
+  border-color: #DAFF33;
+}
+
 /* Remove symbols age field */
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -314,4 +347,5 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] {
   appearance: textfield;
 }
+
 
